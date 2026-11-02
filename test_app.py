@@ -9,3 +9,8 @@ def test_health():
     client = app.test_client()
     response = client.get("/health")
     assert response.get_json() == {"status": "UP"}
+
+def test_about():
+    client = app.test_client()
+    response = client.get("/about")
+    assert response.status_code == 200
