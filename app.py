@@ -4,11 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-<<<<<<< HEAD
     return "Welcome to the DevOps app - main version"
-=======
+
     return "Welcome to the DevOps app - develop version"
->>>>>>> develop
+        
 
 @app.route("/health")
 def health():
